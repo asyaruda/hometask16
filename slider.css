@@ -1,0 +1,54 @@
+ #slider-container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#slider-container img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#slider-container img.active {
+    display: block;
+    opacity: 1;
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #c4b593;
+    color: #010101;
+    font-size: 18px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.slider-button.prev {
+    border: 1px solid #c4b593;
+    border-radius: 10px;
+    left: 0px;
+}
+
+.slider-button.next {
+  border: 1px solid #c4b593;
+  border-radius: 10px;
+  right: 0px;
+}
+
+.slider-button:hover {
+  opacity: 0.8;
+}
+
+
+.hidden {
+    display: none;
+}
